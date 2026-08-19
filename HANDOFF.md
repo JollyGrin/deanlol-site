@@ -1,6 +1,6 @@
 # dean.lol — handoff
 
-*Last updated: 2026-08-19 · state: live; housekeeping done (legacy source deleted, other repos archived), awaiting copy pass*
+*Last updated: 2026-08-19 · state: live; housekeeping done (legacy source deleted, other repos archived, repo renamed deanlol_ssg → deanlol-site), awaiting copy pass*
 
 ## What this repo is
 
@@ -38,10 +38,10 @@ The previous site (Next.js 9 static-export, built 2020) lives only in git histor
 2. **Library system** — the "the library →" doorway needs a destination. Sketch: a `library.json` (title, author, status: read/reading/next, finished date, one-line verdict) rendered client-side; start as a section or page here, graduate to `library.dean.lol` later (round-1 "Ex Libris" mockup is the candidate costume).
 3. **GitHub-driven goof shelf** — shelf is currently hand-curated in HTML. Sketch: build-time or client-side fetch of JollyGrin repos + a small curation file (pin / hide / custom whisper per repo). Keep the whispers hand-written — they're the charm.
 4. **Subdomain constellation** — loud round-1 directions as destination sites (games., library., museum. for BEN/unsung/nestegg/innkeeper.eth). ur3d.dean.lol is the precedent.
-5. ~~**Housekeeping**~~ — done 2026-08-19: `JollyGrin/dean.lol` archived on GitHub with a README pointer here; stale local clones (`~/git/dean.lol`, `~/git/deanlol`) deleted — the only local checkout is `~/git/deanlol_ssg`. Still optional: a custom 404.html (old Next one was deleted).
+5. ~~**Housekeeping**~~ — done 2026-08-19: `JollyGrin/dean.lol` archived on GitHub with a README pointer here; stale local clones (`~/git/dean.lol`, `~/git/deanlol`) deleted — the only local checkout is `~/git/deanlol-site`. Still optional: a custom 404.html (old Next one was deleted).
 
 ## Assets & references
 
 - Design explorations (all rounds): claude.ai/design → project **"dean.lol redesign"**
 - Winner source of truth: `docs/index.html` in this repo
-- Claude session memory: start sessions in this repo (`~/git/deanlol_ssg`) from this HANDOFF.md — the old `~/git/dean.lol` clone (and its session memory path) is gone.
+- Claude session memory: start sessions in this repo (`~/git/deanlol-site`) from this HANDOFF.md — the old `~/git/dean.lol` clone (and its session memory path) is gone.
