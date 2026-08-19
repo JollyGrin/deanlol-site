@@ -1,6 +1,6 @@
 # dean.lol — handoff
 
-*Last updated: 2026-07-28 · state: new site live, awaiting copy pass*
+*Last updated: 2026-08-19 · state: live; housekeeping done (legacy source deleted, other repos archived), awaiting copy pass*
 
 ## What this repo is
 
@@ -18,7 +18,7 @@ Design taste settled on: **understated, graceful, surprising sparks of joy** —
 
 ## Safekeeping — what was here before
 
-The previous site (Next.js 9 static-export, built 2020) is archived in `_legacy-next-ssg/` (source) and in git history (built output). It pulled hobby cards from a **Google Sheet** via a gson proxy (`process.env.URL` — env not in repo). Its rendered content, for the record:
+The previous site (Next.js 9 static-export, built 2020) lives only in git history now — `_legacy-next-ssg/` was deleted 2026-08-19 (it triggered 156 dependabot alerts); recover with `git checkout 60865bf -- _legacy-next-ssg` if ever needed. It pulled hobby cards from a **Google Sheet** via a gson proxy (`process.env.URL` — env not in repo). Its rendered content, for the record:
 
 - **Drones** — mavic air, occasional videos
 - **3D Animation** — blender goofs
@@ -31,7 +31,6 @@ The previous site (Next.js 9 static-export, built 2020) is archived in `_legacy-
 - **Keyforge Cafe** — find keyforge events (pre-covid)
 - Footer links: twitter @dmasley · github JollyGrin · medium post · YouTube channel
 
-⚠️ The old `npm run deploy` script (now in `_legacy-next-ssg/package.json`) rebuilds the 2020 site into `docs/` — do not run it.
 
 ## Open work (in priority order)
 
@@ -39,10 +38,10 @@ The previous site (Next.js 9 static-export, built 2020) is archived in `_legacy-
 2. **Library system** — the "the library →" doorway needs a destination. Sketch: a `library.json` (title, author, status: read/reading/next, finished date, one-line verdict) rendered client-side; start as a section or page here, graduate to `library.dean.lol` later (round-1 "Ex Libris" mockup is the candidate costume).
 3. **GitHub-driven goof shelf** — shelf is currently hand-curated in HTML. Sketch: build-time or client-side fetch of JollyGrin repos + a small curation file (pin / hide / custom whisper per repo). Keep the whispers hand-written — they're the charm.
 4. **Subdomain constellation** — loud round-1 directions as destination sites (games., library., museum. for BEN/unsung/nestegg/innkeeper.eth). ur3d.dean.lol is the precedent.
-5. **Housekeeping** — `JollyGrin/dean.lol` (the *other* repo) accidentally received this same site on master (commit `8bd4501`) before we found the right repo; revert or archive it to avoid confusion. Add a custom 404.html here if desired (old Next one was deleted).
+5. ~~**Housekeeping**~~ — done 2026-08-19: `JollyGrin/dean.lol` archived on GitHub with a README pointer here; stale local clones (`~/git/dean.lol`, `~/git/deanlol`) deleted — the only local checkout is `~/git/deanlol_ssg`. Still optional: a custom 404.html (old Next one was deleted).
 
 ## Assets & references
 
 - Design explorations (all rounds): claude.ai/design → project **"dean.lol redesign"**
 - Winner source of truth: `docs/index.html` in this repo
-- Claude session memory: sessions started in `~/git/dean.lol` (the old repo's path) carry this context automatically; sessions in this repo should start from this HANDOFF.md.
+- Claude session memory: start sessions in this repo (`~/git/deanlol_ssg`) from this HANDOFF.md — the old `~/git/dean.lol` clone (and its session memory path) is gone.
